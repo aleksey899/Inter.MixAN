@@ -18,7 +18,7 @@ namespace GitHub.Controllers
             return str;// Регистрация на платформе
         }
 
-        [HttpGet("Nominateacandidate")]
+        [HttpPost("Nominateacandidate")]
         public string Nominateacandidate(string str)
         {
             return str;// Выдвинуть кандидата
