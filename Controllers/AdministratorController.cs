@@ -13,33 +13,33 @@ namespace GitHub.Controllers
     {
 
         [HttpPost("CandidateRegistration")]
-        public string Registrationontheplatform(string str)
+        public string CandidateRegistration(string str)
         {
             return str;// Регистрация кандидата
         }
 
         [HttpPost("InformationAboutCandidates")]
-        public string Nominateacandidate(string str)
+        public string InformationAboutCandidates(string str)
         {
             return str;// Информация о кандидатах
 
         }
         [HttpPost("VerificationOfApplications")]
-        public string Nominateacandidate(string str)
+        public string VerificationOfApplications(string str)
         {
             return str;// Проверка заявок
 
         }
         
         [HttpPost("TermsOfParticipation")]
-        public string Nominateacandidate(string str)
+        public string TermsOfParticipation(string str)
         {
             return str;// Условия участия
 
         }
         
         [HttpPost("CheckingVotes")]
-        public string Nominateacandidate(string str)
+        public string CheckingVotes(string str)
         {
             return str;// Проверка голосов
 
