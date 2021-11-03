@@ -12,37 +12,44 @@ namespace GitHub.Controllers
     public class VoterController : ControllerBase
 
     {
-        [HttpPost("Registrationontheplatform")]
-        public string Registrationontheplatform(string str)
+        [HttpPost("RegistrationOnThePlatform")]
+        public string RegistrationOnThePlatform(string str)
         {
             return str;// Регистрация на платформе
         }
 
-        [HttpGet("Toknowlinkontheplatform")]
-        public string Toknowlinkontheplatform(string str)
+       [HttpPost("MeetTheConditions")]
+        public string MeetTheConditions(string str)
         {
-            return str;//Узнать ссылку на платформу
+            return str;// Соответствовать условиям для участия
         }
-
-        [HttpPost("Enteringpassportdata")]
-        public string Enteringpassportdata(string str)
+       
+       
+        [HttpPost("EnteringPassportData")]
+        public string EnteringPassportData(string str)
         {
             return str;// Ввод паспортных данных
         }
 
-        [HttpPost("Choosingacandidate")]
-        public string Choosingacandidate(string str)
+        [HttpPost("CandidateSelection")]
+        public string CandidateSelection(string str)
         {
             return str;// Выбор кандидата
         }
 
-        [HttpGet("Obtaininginformationaboutacandidate ")]
-        public string Obtaininginformationaboutacandidate(string str)
+        [HttpGet("InformationAboutTheCandidate")]
+        public string InformationAboutTheCandidate(string str)
         {
             return str;// Получение сведений о кандидате
         }
+        
+         [HttpGet("ViewingCampaignMaterials")]
+        public string ViewingCampaignMaterials(string str)
+        {
+            return str;// Просмотр агитационных материалов
+        }
 
-        [HttpPost("Leaveavoice")]
+        [HttpPost("LeaveVoice")]
         public string Leaveavoice(string str)
         {
             return str;// Оставить голос
