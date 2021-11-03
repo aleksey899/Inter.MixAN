@@ -12,16 +12,36 @@ namespace GitHub.Controllers
     public class AdministratorController : ControllerBase
     {
 
-        [HttpPost("Registrationontheplatform")]
+        [HttpPost("CandidateRegistration")]
         public string Registrationontheplatform(string str)
         {
-            return str;// Регистрация на платформе
+            return str;// Регистрация кандидата
         }
 
-        [HttpPost("Nominateacandidate")]
+        [HttpPost("InformationAboutCandidates")]
         public string Nominateacandidate(string str)
         {
-            return str;// Выдвинуть кандидата
+            return str;// Информация о кандидатах
+
+        }
+        [HttpPost("VerificationOfApplications")]
+        public string Nominateacandidate(string str)
+        {
+            return str;// Проверка заявок
+
+        }
+        
+        [HttpPost("TermsOfParticipation")]
+        public string Nominateacandidate(string str)
+        {
+            return str;// Условия участия
+
+        }
+        
+        [HttpPost("CheckingVotes")]
+        public string Nominateacandidate(string str)
+        {
+            return str;// Проверка голосов
 
         }
 
