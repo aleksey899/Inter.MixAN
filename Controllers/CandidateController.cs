@@ -18,10 +18,16 @@ namespace GitHub.Controllers
             return str;// Агитация
         }
 
-        [HttpPost("Meettheconditionsforparticipationintheelections")]
-        public string Meettheconditionsforparticipationintheelections(string str)
+        [HttpPost("MeetTheConditions")]
+        public string MeetTheConditions(string str)
         {
             return str;// Соответствовать условиям для участия в выборах
+        }
+        
+        [HttpPost("ApplicationForRegistration")]
+        public string ApplicationForRegistration(string str)
+        {
+            return str;// Оставить заявку на регистрацию
         }
 
 
