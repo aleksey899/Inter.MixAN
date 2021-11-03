@@ -21,10 +21,10 @@ namespace GitHub.Controllers
         [HttpPost("InformationAboutCandidates")]
         public string InformationAboutCandidates(string str)
         {
-            return str;// Информация о кандидатах
+            return str;// Внести информация о кандидатах
 
         }
-        [HttpPost("VerificationOfApplications")]
+        [HttpGet("VerificationOfApplications")]
         public string VerificationOfApplications(string str)
         {
             return str;// Проверка заявок
@@ -38,7 +38,7 @@ namespace GitHub.Controllers
 
         }
         
-        [HttpPost("CheckingVotes")]
+        [HttpGet("CheckingVotes")]
         public string CheckingVotes(string str)
         {
             return str;// Проверка голосов
