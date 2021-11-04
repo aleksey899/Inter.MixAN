@@ -12,7 +12,7 @@ namespace Employment.Controllers
     public class AdministratorEntityController : ControllerBase
     {
 
-        [HttpPut()]
+        [HttpPut( )]
         public string Create(string str)
         {
             return str;
