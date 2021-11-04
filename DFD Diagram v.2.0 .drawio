@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-11-04T12:10:56.792Z" agent="5.0 (Windows)" etag="nSVwcHJE8eRVA0-7ABLG" version="15.6.8" type="github">
+<mxfile host="app.diagrams.net" modified="2021-11-04T12:22:35.163Z" agent="5.0 (Windows)" etag="8wTurke4uH7Kmo8Ba3Fz" version="15.6.8" type="github">
   <diagram id="JmuFzZtwAlmiX_NOEhPW" name="Page-1">
     <mxGraphModel dx="1483" dy="736" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -297,7 +297,7 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="hFdm3sWJ3O_plOhxWSF5-13" value="Проверить заявки на регистрацию" style="rounded=0;whiteSpace=wrap;html=1;fontSize=13;fillColor=#ffe6cc;strokeColor=#d79b00;" parent="1" vertex="1">
-          <mxGeometry x="1330" y="910" width="110" height="50" as="geometry" />
+          <mxGeometry x="1330" y="900" width="110" height="50" as="geometry" />
         </mxCell>
         <mxCell id="hFdm3sWJ3O_plOhxWSF5-14" value="" style="endArrow=none;html=1;rounded=0;fontSize=13;opacity=40;" parent="1" source="hFdm3sWJ3O_plOhxWSF5-13" target="Ckuc4saJkIq0bEPmqGia-4" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
