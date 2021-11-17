@@ -5,7 +5,7 @@
 
 [1. Описание](#domainDescription)
 
-###1.1 Описание(#domainDescription)
+[1.1 Описание](#domainDescription)
 
 [1.2 Описание](#domainDescription)
 
