@@ -3,13 +3,17 @@
 ## Содержание
 [Введение](#introduction)
 
-[1. Описание](#domainDescription)
+[1 Описание предметной области](#domainDescription)
 
-[1.1 Описание](#domainDescription)
+[2 Сравнительный анализ ](#existingSoftware)
 
-[1.2 Описание](#domainDescription)
+[3 Проектирование системы](#Systemdesign)
 
-[2. Сравнительный анализ существующих прогарммных решений](#existingSoftware)
+[4 Проверка и тестирование системы](#Checkingandtestingthesystem)
+
+[Заключение](#Conclusion)
+
+[Список литературы](#Listofliterature)
 
 <a name= "introduction"/>
 
