@@ -12,25 +12,25 @@ namespace Employment.Controllers
     public class ElectionInformationController : ControllerBase
 
     {
-        [HttpPut()]
+        [HttpPut]
         public string Create(string str)
         {
             return str;
         }
 
-        [HttpGet()]
+        [HttpGet]
         public string Read(string str)
         {
             return str;
         }
 
-        [HttpPatch()]
+        [HttpPatch]
         public string Update(string str)
         {
             return str;
         }
 
-        [HttpDelete()]
+        [HttpDelete]
         public string Delete(string str)
         {
             return str;
