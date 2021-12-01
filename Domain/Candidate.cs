@@ -1,8 +1,9 @@
 using System;
+using Inter.MixAN.Repository;
 
-namespace GitHub
+namespace Inter.MixAN.Domain
 {
-    public class Candidate
+    public class Candidate : AAID
 
     {
         public string Id { get; set; }

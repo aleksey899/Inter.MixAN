@@ -1,8 +1,9 @@
 using System;
+using Inter.MixAN.Repository;
 
-namespace GitHub
+namespace Inter.MixAN.Domain
 {
-    public class MaterialsForAgitation
+    public class MaterialsForAgitation : AAID
     {
         public string Id { get; set; }
 
