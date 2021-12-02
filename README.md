@@ -5,7 +5,7 @@
 
 [1 Описание предметной области](#domainDescription)
 
-[1.1 Актуальность задачи](#RelevanceDescription)
+  [1.1 Актуальность задачи](#RelevanceDescription)
 
 [2 Сравнительный анализ ](#existingSoftware)
 
