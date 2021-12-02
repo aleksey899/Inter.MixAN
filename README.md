@@ -87,4 +87,6 @@
  
  ## Список использованных источников
  
-1. Информационный портал о выборах "Выбор народа" - http://vybor-naroda.org/lentanovostey/193789-na-puti-k-cifrovizacii-pljusy-i-minusy-djeg.html
+1. Draw.io [Электронный ресурс]. – https://app.diagrams.net/
+2. Информационный портал о выборах "Выбор народа" [Электронный ресурс]. – http://vybor-naroda.org/lentanovostey/193789-na-puti-k-cifrovizacii-pljusy-i-minusy-djeg.html
+ 
