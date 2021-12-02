@@ -9,7 +9,7 @@ namespace Inter.MixAN.Repository
 {
     public class AAID
     {
-        public int ID { get; set; }
+        public int Id { get; set; }
     }
 
     public class Storages
@@ -50,7 +50,7 @@ namespace Inter.MixAN.Repository
 
         public bool Create(St obj)
         {
-            if (storage.Where(t => t.ID == obj.ID).Count() != 0)
+            if (storage.Where(t => t.Id == obj.Id).Count() != 0)
                 return false;
             storage.Add(obj);
             return true;
@@ -58,14 +58,14 @@ namespace Inter.MixAN.Repository
 
         public St Read(int ID)
         {
-            if (storage.Where(t => t.ID == ID).Count() != 0)
-                return storage.Where(t => t.ID == ID).First();
+            if (storage.Where(t => t.Id == ID).Count() != 0)
+                return storage.Where(t => t.Id == ID).First();
             return null;
         }
 
         public St Update(St obj)
         {
-            int index = storage.FindIndex(t => t.ID == obj.ID);
+            int index = storage.FindIndex(t => t.Id == obj.Id);
             if (index == -1)
                 Create(obj);
             else
@@ -75,7 +75,7 @@ namespace Inter.MixAN.Repository
 
         public bool Delete(int objID)
         {
-            return storage.RemoveAll(t => t.ID == objID) != 0;
+            return storage.RemoveAll(t => t.Id == objID) != 0;
         }
     }
 }

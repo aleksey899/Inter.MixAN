@@ -5,8 +5,6 @@ namespace Inter.MixAN.Domain
 {
     public class TermsOfParticipation : AAID
     {
-        public int Id { get; set; }
-
         public bool CriminalRecord { get; set; }
 
         public string Citizenship { get; set; }
