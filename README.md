@@ -83,7 +83,7 @@
  
  Разработка начианется с проектрирования USE CASE диаграммы, отображающей основыне лица данной системы: Покупатель, Продавец, Агент по недвижимости.
  <p align="center">
-<img src="(https://user-images.githubusercontent.com/80284176/146237452-3c7c90e6-69b6-4171-a55c-ab95959f6573.PNG)</p>
+<img src="https://user-images.githubusercontent.com/80284176/146237452-3c7c90e6-69b6-4171-a55c-ab95959f6573.PNG</p>
 <p align="center">Рисунок 1 - USE CASE диаграмма</p>
  
  
