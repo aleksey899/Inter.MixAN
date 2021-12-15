@@ -90,6 +90,11 @@
  <p align="center">
 <img src="https://user-images.githubusercontent.com/80284176/146239525-638f32b9-e4ed-48b3-b9a7-64d8dc21bc0e.PNG"></p>
 <p align="center"> Рисунок 2 - DFD диаграмма</p>
+
+На основе DFD диаграммы создается сущность ER-диаграммы, которая показывает связи в системе.
+<p align="center">
+<img src="https://user-images.githubusercontent.com/80284176/146240013-a19229b9-e8aa-4983-a2c9-0042e61ce6d0.PNG"></p>
+<p align="center">Рисунок 2 - ER-диаграмма</p>
  
  ***
  
