@@ -6,76 +6,50 @@ using System.Xml.Serialization;
 using Inter.MixAN.Domain;
 
 namespace Inter.MixAN.Repository
-{
-    public class AAID
-    {
-        public int ID { get; set; }
-    }
 
-    public class Storages
+    public class Storage<TIdentifier> where TIdentifier : TIdentifier
     {
-        public static Storage<Admin> AdminStorage { get; } = new Storage<Admin>();
-        public static Storage<Application> ApplicationStorage { get; } = new Storage<Application>();
-        public static Storage<Candidate> CandidateStorage { get; } = new Storage<Candidate>();
-        public static Storage<InformationCandidate> InformationCandidateStorage { get; } = new Storage<InformationCandidate>();
-        public static Storage<InformationVoter> InformationVoterStorage { get; } = new Storage<InformationVoter>();
-        public static Storage<MaterialsForAgitation> MaterialsForAgitationStorage { get; } = new Storage<MaterialsForAgitation>();
-        public static Storage<TermsOfParticipation> TermsOfParticipationStorage { get; } = new Storage<TermsOfParticipation>();
-        public static Storage<Voter> VoterStorage { get; } = new Storage<Voter>();
-    }
-
-    public class Storage<St> where St : AAID
-    {
-        private static string path = typeof(St).Name + ".xml";
-        private List<St> storage = new List<St>();
-
-        public Storage() { }
+        private static string path = typeof(TIdentifier).Name + ".xml";
+        private List<TIdentifier> _storage = new();
+     
 
         public void ReadFromXMLFile()
         {
-            if (File.Exists(path))
-            {
-                XmlSerializer xs = new XmlSerializer(typeof(List<St>));
-                using (FileStream fs = new FileStream(path, FileMode.Open))
-                    storage = (List<St>)xs.Deserialize(fs);
-            }
+            if (File.Exists(path)) return;           
+            var xs = new XmlSerializer(typeof(List<St>));
+            using var fs = new FileStream(path, FileMode.Open)
+            _storage = (List<St>)xs.Deserialize(fs)            
         }
 
         public void SaveToXMLFile()
         {
-            XmlSerializer xs = new XmlSerializer(typeof(List<St>));
-            using (FileStream fs = new FileStream(path, FileMode.Create))
-                xs.Serialize(fs, storage);
+            var xs = new XmlSerializer(typeof(List<TIdentifier>));
+            using var fs = new FileStream(path, FileMode.Create)
+            xs.Serialize(fs,_storage);
         }
 
-        public bool Create(St obj)
+        public bool Create(TIdentifier obj)
         {
-            if (storage.Where(t => t.ID == obj.ID).Count() != 0)
-                return false;
-            storage.Add(obj);
+            if (_storage.Any(t => t.Id == obj.Id)) return false;
+            _storage.Add(obj);
             return true;
         }
 
-        public St Read(int ID)
+        public TIdentifier Read(int id) => _storage.First(t => t.Id == id);
+       
+        public TIdentifier Update(St obj)
         {
-            if (storage.Where(t => t.ID == ID).Count() != 0)
-                return storage.Where(t => t.ID == ID).First();
-            return null;
-        }
-
-        public St Update(St obj)
-        {
-            int index = storage.FindIndex(t => t.ID == obj.ID);
+            var index = _storage.FindIndex(t => t.Id == obj.Id);
             if (index == -1)
                 Create(obj);
             else
-                storage[index] = obj;
+                _storage[index] = obj;
             return obj;
         }
 
         public bool Delete(int objID)
         {
-            return storage.RemoveAll(t => t.ID == objID) != 0;
+            return _storage.RemoveAll(t => t.Id == objID) != 0;
         }
     }
 }
