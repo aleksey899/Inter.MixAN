@@ -5,8 +5,6 @@ namespace Inter.MixAN.Domain
 {
     public class MaterialsForAgitation : AAID
     {
-        public string Id { get; set; }
-
         public string CallToVoteForACandidate { get; set; }
 
         public string Slogan { get; set; }

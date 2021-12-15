@@ -6,7 +6,6 @@ namespace Inter.MixAN.Domain
     public class Candidate : AAID
 
     {
-        public string Id { get; set; }
 
         public string Name { get; set; }
 
@@ -20,9 +19,6 @@ namespace Inter.MixAN.Domain
             this.Name = name;
             this.DateOfBirth = dateOfBirth;
             this.MaterialsForAgitation = materialsForAgitation;
-            
-
         }
-
     }
 }
