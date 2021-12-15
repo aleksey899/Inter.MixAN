@@ -13,10 +13,10 @@ namespace Inter.MixAN.Domain
 
         Voter(int id, string name, string dateOfBirth, int passportSeriesAndNumber)
         {
-            this.Id = id;
-            this.Name = name;
-            this.DateOfBirth = dateOfBirth;
-            this.PassportSeriesAndNumber = passportSeriesAndNumber;
+            Id = id;
+            Name = name;
+            DateOfBirth = dateOfBirth;
+            PassportSeriesAndNumber = passportSeriesAndNumber;
 
         }
 

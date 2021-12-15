@@ -15,10 +15,10 @@ namespace Inter.MixAN.Domain
 
         Candidate(int id, string name, string dateOfBirth, int materialsForAgitation)
         {
-            this.Id = id;
-            this.Name = name;
-            this.DateOfBirth = dateOfBirth;
-            this.MaterialsForAgitation = materialsForAgitation;
+            Id = id;
+            Name = name;
+            DateOfBirth = dateOfBirth;
+            MaterialsForAgitation = materialsForAgitation;
         }
     }
 }

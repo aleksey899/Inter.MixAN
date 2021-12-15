@@ -17,12 +17,12 @@ namespace Inter.MixAN.Domain
 
         Application(int id, string name, string dateOfBirth, bool criminalRecord, int adminId, int candidateId)
         {
-            this.Id = id;
-            this.Name = name;
-            this.DateOfBirth = dateOfBirth;
-            this.CriminalRecord = criminalRecord;
-            this.AdminId = adminId;
-            this.CandidateId = candidateId;
+            Id = id;
+            Name = name;
+            DateOfBirth = dateOfBirth;
+            CriminalRecord = criminalRecord;
+            AdminId = adminId;
+            CandidateId = candidateId;
             
         }
 

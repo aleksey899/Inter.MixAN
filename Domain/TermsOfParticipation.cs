@@ -15,11 +15,11 @@ namespace Inter.MixAN.Domain
 
         TermsOfParticipation(int id, bool criminalRecord, string citizenship, string legalStatus, int adminId)
         {
-            this.Id = id;
-            this.CriminalRecord = criminalRecord;
-            this.Citizenship = citizenship;
-            this.LegalStatus = legalStatus;
-            this.AdminId = adminId;
+            Id = id;
+            CriminalRecord = criminalRecord;
+            Citizenship = citizenship;
+            LegalStatus = legalStatus;
+            AdminId = adminId;
             
         }
 

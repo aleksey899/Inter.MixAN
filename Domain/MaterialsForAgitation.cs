@@ -19,13 +19,13 @@ namespace Inter.MixAN.Domain
 
         MaterialsForAgitation(int id, string callToVoteForACandidate, string slogan, string informationAboutTheCandidateActivities, string candidateProgram, string programInterview, string message)
         {
-            this.Id = id;
-            this.CallToVoteForACandidate = callToVoteForACandidate;
-            this.Slogan = slogan;
-            this.InformationAboutTheCandidateActivities = informationAboutTheCandidateActivities;
-            this.CandidateProgram = candidateProgram;
-            this.ProgramInterview = programInterview;
-            this.Message = message;
+            Id = id;
+            CallToVoteForACandidate = callToVoteForACandidate;
+            Slogan = slogan;
+            InformationAboutTheCandidateActivities = informationAboutTheCandidateActivities;
+            CandidateProgram = candidateProgram;
+            ProgramInterview = programInterview;
+            Message = message;
 
         }
 

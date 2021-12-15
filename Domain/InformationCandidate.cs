@@ -25,16 +25,16 @@ namespace Inter.MixAN.Domain
 
         InformationCandidate(int id, string name, string dateOfBirth, string placeOfResidence, string email, string education, string achievements, string merits, string hobbies, int numberOfVotes)
         {
-            this.Id = id;
-            this.Name = name;
-            this.DateOfBirth = dateOfBirth;
-            this.PlaceOfResidence = placeOfResidence;
-            this.Email = email;
-            this.Education = education;
-            this.Achievements = achievements;
-            this.Merits = merits;
-            this.Hobbies = hobbies;
-            this.NumberOfVotes = numberOfVotes;
+            Id = id;
+            Name = name;
+            DateOfBirth = dateOfBirth;
+            PlaceOfResidence = placeOfResidence;
+            Email = email;
+            Education = education;
+            Achievements = achievements;
+            Merits = merits;
+            Hobbies = hobbies;
+            NumberOfVotes = numberOfVotes;
         }
 
     }

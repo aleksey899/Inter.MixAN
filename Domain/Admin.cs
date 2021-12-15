@@ -23,15 +23,15 @@ namespace Inter.MixAN.Domain
 
         Admin(int id, string name, string email, int phoneNumber, string listOfCandidates, int candidateInformationID, int electionsInformationID, int termsParticipationID, int userInformationID)
         {
-            this.Id = id;
-            this.Name = name;
-            this.Email = email;
-            this.PhoneNumber = phoneNumber;
-            this.ListOfCandidates = listOfCandidates;
-            this.CandidateInformationID = candidateInformationID;
-            this.ElectionsInformationID = electionsInformationID;
-            this.TermsParticipationID = termsParticipationID;
-            this.UserInformationID = userInformationID;
+            Id = id;
+            Name = name;
+            Email = email;
+            PhoneNumber = phoneNumber;
+            ListOfCandidates = listOfCandidates;
+            CandidateInformationID = candidateInformationID;
+            ElectionsInformationID = electionsInformationID;
+            TermsParticipationID = termsParticipationID;
+            UserInformationID = userInformationID;
         }
     }
 }
