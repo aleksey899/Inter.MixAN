@@ -1,8 +1,14 @@
-using Inter.MixAN.Domains;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.IO;
+using System.Xml.Serialization;
+using Inter.MixAN.Domain;
+
 
 namespace Inter.MixAN.Repository
 {
-    public static class Storages
+    public class Storages
     {
         public static Storage<Admin> AdminStorage { get; } = new();
         public static Storage<Application> ApplicationStorage { get; } = new();

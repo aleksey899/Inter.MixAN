@@ -2,12 +2,11 @@
 using Inter.MixAN.Domain;
 using Inter.MixAN.Repository;
 
-namespace Employment.Controllers
+namespace Inter.MixAN.Controllers
 {
     [ApiController]
-    [Route("/InformationCandidate")]
-    public class InformationCandidateController : ControllerBase
-
+    [Route("/Admin")]
+    public class AdministratorEntityController : ControllerBase
     {
         [HttpPut]
         public string Create(string str)
@@ -34,39 +33,41 @@ namespace Employment.Controllers
         }
 
         [HttpPost("Create")]
-        public bool Create(InformationCandidate informationCandidate)
+        public bool Create(Admin admin)
         {
-            return Storages.InformationCandidateStorage.Create(informationCandidate);
+            return Storages.AdminStorage.Create(admin);
         }
 
         [HttpGet("Read")]
-        public InformationCandidate Read(int Id)
+        public Admin Read(int Id)
         {
-            return Storages.InformationCandidateStorage.Read(Id);
+            return Storages.AdminStorage.Read(Id);
         }
 
         [HttpPut("Update")]
-        public InformationCandidate Update(InformationCandidate informationCandidate)
+        public Admin Update(Admin admin)
         {
-            return Storages.InformationCandidate.Update(informationCandidate);
+            return Storages.AdminStorage.Update(admin);
         }
 
         [HttpDelete("Delete")]
         public bool Delete(int Id)
         {
-            return Storages.InformationCandidateStorage.Delete(Id);
+            return Storages.AdminStorage.Delete(Id);
         }
 
         [HttpPost("SaveToFile")]
         public void SaveToFile()
         {
-            Storages.InformationCandidateStorage.SaveToXmlFile();
+            Storages.AdminStorage.SaveToXmlFile();
         }
 
         [HttpGet("ReadFromFile")]
         public void ReadFromFile()
         {
-            Storages.InformationCandidateStorage.ReadFromXmlFile();
+            Storages.AdminStorage.ReadFromXmlFile();
         }
+
+
     }
 }

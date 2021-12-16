@@ -1,14 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.Extensions.Logging;
+﻿using Microsoft.AspNetCore.Mvc;
+using Inter.MixAN.Domain;
+using Inter.MixAN.Repository;
 
-namespace Employment.Controllers
+namespace Inter.MixAN.Controllers
 {
     [ApiController]
-    [Route("/CandidateEntity")]
+    [Route("/Candidate")]
     public class CandidateEntityController : ControllerBase
 
     {
@@ -36,6 +33,43 @@ namespace Employment.Controllers
             return str;
         }
 
+
+
+        [HttpPost("Create")]
+        public bool Create(Candidate сandidate)
+        {
+            return Storages.CandidateStorage.Create(сandidate);
+        }
+
+        [HttpGet("Read")]
+        public Candidate Read(int Id)
+        {
+            return Storages.CandidateStorage.Read(Id);
+        }
+
+        [HttpPut("Update")]
+        public Candidate Update(Candidate сandidate)
+        {
+            return Storages.CandidateStorage.Update(сandidate);
+        }
+
+        [HttpDelete("Delete")]
+        public bool Delete(int Id)
+        {
+            return Storages.CandidateStorage.Delete(Id);
+        }
+
+        [HttpPost("SaveToFile")]
+        public void SaveToFile()
+        {
+            Storages.CandidateStorage.SaveToXmlFile();
+        }
+
+        [HttpGet("ReadFromFile")]
+        public void ReadFromFile()
+        {
+            Storages.CandidateStorage.ReadFromXmlFile();
+        }
 
     }
 }

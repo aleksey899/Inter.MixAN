@@ -2,9 +2,11 @@ using System;
 using Inter.MixAN.Repository;
 
 namespace Inter.MixAN.Domain
+
 {
-    public class Application: AAID
+    public class Application: IIdentifier
     {
+        public int Id { get; set; }
         public string Name { get; set; }
 
         public string DateOfBirth { get; set; }

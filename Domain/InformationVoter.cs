@@ -3,8 +3,9 @@ using Inter.MixAN.Repository;
 
 namespace Inter.MixAN.Domain
 {
-    public class InformationVoter : AAID
+    public class InformationVoter : IIdentifier
     {
+        public int Id { get; set; }
         public string Name { get; set; }
 
         public int PassportSeriesAndNumber { get; set; }

@@ -3,8 +3,9 @@ using Inter.MixAN.Repository;
 
 namespace Inter.MixAN.Domain
 {
-    public class MaterialsForAgitation : AAID
+    public class MaterialsForAgitation : IIdentifier
     {
+        public int Id { get; set; }
         public string CallToVoteForACandidate { get; set; }
 
         public string Slogan { get; set; }

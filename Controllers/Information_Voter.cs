@@ -1,9 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.Extensions.Logging;
+﻿using Microsoft.AspNetCore.Mvc;
+using Inter.MixAN.Domain;
+using Inter.MixAN.Repository;
 
 namespace Employment.Controllers
 {
@@ -36,6 +33,43 @@ namespace Employment.Controllers
             return str;
         }
 
+
+
+        [HttpPost("Create")]
+        public bool Create(InformationVoter informationVoter)
+        {
+            return Storages.InformationVoterStorage.Create(informationVoter);
+        }
+
+        [HttpGet("Read")]
+        public InformationVoter Read(int Id)
+        {
+            return Storages.InformationVoterStorage.Read(Id);
+        }
+
+        [HttpPut("Update")]
+        public InformationVoter Update(InformationVoter informationVoter)
+        {
+            return Storages.InformationVoterStorage.Update(informationVoter);
+        }
+
+        [HttpDelete("Delete")]
+        public bool Delete(int Id)
+        {
+            return Storages.InformationVoterStorage.Delete(Id);
+        }
+
+        [HttpPost("SaveToFile")]
+        public void SaveToFile()
+        {
+            Storages.InformationVoterStorage.SaveToXmlFile();
+        }
+
+        [HttpGet("ReadFromFile")]
+        public void ReadFromFile()
+        {
+            Storages.InformationVoterStorage.ReadFromXmlFile();
+        }
 
     }
 }

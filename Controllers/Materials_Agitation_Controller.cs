@@ -2,11 +2,11 @@
 using Inter.MixAN.Domain;
 using Inter.MixAN.Repository;
 
-namespace Employment.Controllers
+namespace Inter.MixAN.Controllers
 {
     [ApiController]
-    [Route("/InformationCandidate")]
-    public class InformationCandidateController : ControllerBase
+    [Route("/Agitation")]
+    public class MaterialsForAgitation : ControllerBase
 
     {
         [HttpPut]
@@ -33,40 +33,44 @@ namespace Employment.Controllers
             return str;
         }
 
+
+
         [HttpPost("Create")]
-        public bool Create(InformationCandidate informationCandidate)
+        public bool Create(MaterialsForAgitation materialsForAgitation)
         {
-            return Storages.InformationCandidateStorage.Create(informationCandidate);
+            return Storages.MaterialsForAgitation.Create(materialsForAgitation);
         }
 
         [HttpGet("Read")]
-        public InformationCandidate Read(int Id)
+        public MaterialsForAgitation Read(int Id)
         {
-            return Storages.InformationCandidateStorage.Read(Id);
+            return Storages.MaterialsForAgitationStorage.Read(Id);
         }
 
         [HttpPut("Update")]
-        public InformationCandidate Update(InformationCandidate informationCandidate)
+        public MaterialsForAgitation Update(MaterialsForAgitation materialsForAgitation)
         {
-            return Storages.InformationCandidate.Update(informationCandidate);
+            return Storages.MaterialsForAgitationStorage.Update(materialsForAgitation);
         }
 
         [HttpDelete("Delete")]
         public bool Delete(int Id)
         {
-            return Storages.InformationCandidateStorage.Delete(Id);
+            return Storages.MaterialsForAgitationStorage.Delete(Id);
         }
 
         [HttpPost("SaveToFile")]
         public void SaveToFile()
         {
-            Storages.InformationCandidateStorage.SaveToXmlFile();
+            Storages.MaterialsForAgitationStorage.SaveToXmlFile();
         }
 
         [HttpGet("ReadFromFile")]
         public void ReadFromFile()
         {
-            Storages.InformationCandidateStorage.ReadFromXmlFile();
+            Storages.MaterialsForAgitationStorage.ReadFromXmlFile();
         }
+
+
     }
 }

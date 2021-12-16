@@ -1,11 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.Extensions.Logging;
+﻿using Microsoft.AspNetCore.Mvc;
+using Inter.MixAN.Domain;
+using Inter.MixAN.Repository;
 
-namespace GitHub.Controllers
+namespace Inter.MixAN.Controllers
 {
     [ApiController]
     [Route("/Voter")]

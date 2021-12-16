@@ -1,10 +1,12 @@
 using System;
 using Inter.MixAN.Repository;
 
+
 namespace Inter.MixAN.Domain
 {
-    public class Admin: AAID
+    public class Admin: IIdentifier
     {
+        public int Id { get; set; }
         public string Name { get; set; }
 
         public string Email { get; set; }

@@ -1,15 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.Extensions.Logging;
+﻿using Microsoft.AspNetCore.Mvc;
+using Inter.MixAN.Domain;
+using Inter.MixAN.Repository;
 
 namespace Employment.Controllers
 {
     [ApiController]
-    [Route("/TermsOfParticipation")]
-    public class TermsOfParticipationController : ControllerBase
+    [Route("/TermsParticipation")]
+    public class TermsParticipationController : ControllerBase
 
     {
         [HttpPut]
@@ -36,6 +33,42 @@ namespace Employment.Controllers
             return str;
         }
 
+
+        [HttpPost("Create")]
+        public bool Create(TermsOfParticipation termsOfParticipation)
+        {
+            return Storages.TermsOfParticipationStorage.Create(termsOfParticipation);
+        }
+
+        [HttpGet("Read")]
+        public TermsOfParticipation Read(int Id)
+        {
+            return Storages.TermsOfParticipationStorage.Read(Id);
+        }
+
+        [HttpPut("Update")]
+        public TermsOfParticipation Update(TermsOfParticipation termsOfParticipation)
+        {
+            return Storages.TermsOfParticipationStorage.Update(termsOfParticipation);
+        }
+
+        [HttpDelete("Delete")]
+        public bool Delete(int Id)
+        {
+            return Storages.TermsOfParticipationStorage.Delete(Id);
+        }
+
+        [HttpPost("SaveToFile")]
+        public void SaveToFile()
+        {
+            Storages.TermsOfParticipationStorage.SaveToXmlFile();
+        }
+
+        [HttpGet("ReadFromFile")]
+        public void ReadFromFile()
+        {
+            Storages.TermsOfParticipationStorage.ReadFromXmlFile();
+        }
 
     }
 }
