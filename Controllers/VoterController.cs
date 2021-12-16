@@ -51,9 +51,5 @@ namespace Inter.MixAN.Controllers
         {
             return str;// Оставить голос
         }
-
-
-
-
     }
 }

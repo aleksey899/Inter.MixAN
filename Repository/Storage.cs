@@ -1,52 +1,46 @@
-using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.IO;
 using System.Xml.Serialization;
-using Inter.MixAN.Domain;
 
 namespace Inter.MixAN.Repository
 {
-   
     public class Storage<TIdentifier> where TIdentifier : IIdentifier
     {
-        private static string Filepath = typeof(IIdentifier).Name + ".xml";
-        private List<IIdentifier> _storage = new();
+        private static string _filepath = nameof(IIdentifier) + ".xml";
+        private List<TIdentifier> _storage = new();
 
-        public Storage() { }
-
-        public void ReadFromXMLFile()
+        public void ReadFromXmlFile()
         {
-            if (File.Exists(Filepath)) return;           
+            if (File.Exists(_filepath)) return;           
             var xs = new XmlSerializer(typeof(List<IIdentifier>));
-            using var fs = new FileStream(Filepath, FileMode.Open);
-            _storage = (List<IIdentifier>)xs.Deserialize(fs);           
+            using var fs = new FileStream(_filepath, FileMode.Open);
+            _storage = (List<TIdentifier>)xs.Deserialize(fs);           
         }
 
-        public void SaveToXMLFile()
+        public void SaveToXmlFile()
         {
-            if (!Directory.Exists(Path.GetDirectoryName(Filepath)))
-                Directory.CreateDirectory(Path.GetFullPath(Filepath));
+            if (!Directory.Exists(Path.GetDirectoryName(_filepath)))
+                Directory.CreateDirectory(Path.GetFullPath(_filepath));
             var xs = new XmlSerializer(typeof(List<IIdentifier>));
-            using var fs = new FileStream(Filepath, FileMode.Create);
+            using var fs = new FileStream(_filepath, FileMode.Create);
             xs.Serialize(fs, _storage);
             fs.Flush();
         }
 
-        public bool Create(IIdentifier obj)
+        public bool Create(TIdentifier obj)
         {
-
             if (_storage.Any(t => t.Id == obj.Id))
                 return false;
             _storage.Add(obj);
             return true;
         }
 
-        public IIdentifier Read(int id)
+        public TIdentifier Read(int id)
         {
             return _storage.FirstOrDefault(t => t.Id == id);
         }
-        public IIdentifier Update(IIdentifier obj)
+        public TIdentifier Update(TIdentifier obj)
         {
             var index = _storage.FindIndex(t => t.Id == obj.Id);
             if (index == -1)
@@ -56,11 +50,9 @@ namespace Inter.MixAN.Repository
             return obj;
         }
 
-        public bool Delete(int objID)
+        public bool Delete(int objId)
         {
-
-            return _storage.RemoveAll(t => t.Id == objID) != 0;
-
+            return _storage.RemoveAll(t => t.Id == objId) != 0;
         }
     }
 }

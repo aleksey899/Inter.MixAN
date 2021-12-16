@@ -6,7 +6,7 @@ namespace Inter.MixAN.Controllers
 {
     [ApiController]
     [Route("/Agitation")]
-    public class MaterialsForAgitation : ControllerBase
+    public class MaterialsForAgitationController : ControllerBase
 
     {
         [HttpPut]
@@ -33,12 +33,10 @@ namespace Inter.MixAN.Controllers
             return str;
         }
 
-
-
         [HttpPost("Create")]
         public bool Create(MaterialsForAgitation materialsForAgitation)
         {
-            return Storages.MaterialsForAgitation.Create(materialsForAgitation);
+            return Storages.MaterialsForAgitationStorage.Create(materialsForAgitation);
         }
 
         [HttpGet("Read")]
@@ -70,7 +68,5 @@ namespace Inter.MixAN.Controllers
         {
             Storages.MaterialsForAgitationStorage.ReadFromXmlFile();
         }
-
-
     }
 }

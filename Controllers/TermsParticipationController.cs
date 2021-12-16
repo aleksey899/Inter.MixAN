@@ -5,9 +5,8 @@ using Inter.MixAN.Repository;
 namespace Employment.Controllers
 {
     [ApiController]
-    [Route("/InformationCandidate")]
-    public class InformationCandidateController : ControllerBase
-
+    [Route("/TermsParticipation")]
+    public class TermsParticipationController : ControllerBase
     {
         [HttpPut]
         public string Create(string str)
@@ -33,40 +32,41 @@ namespace Employment.Controllers
             return str;
         }
 
+
         [HttpPost("Create")]
-        public bool Create(InformationCandidate informationCandidate)
+        public bool Create(TermsOfParticipation termsOfParticipation)
         {
-            return Storages.InformationCandidateStorage.Create(informationCandidate);
+            return Storages.TermsOfParticipationStorage.Create(termsOfParticipation);
         }
 
         [HttpGet("Read")]
-        public InformationCandidate Read(int Id)
+        public TermsOfParticipation Read(int Id)
         {
-            return Storages.InformationCandidateStorage.Read(Id);
+            return Storages.TermsOfParticipationStorage.Read(Id);
         }
 
         [HttpPut("Update")]
-        public InformationCandidate Update(InformationCandidate informationCandidate)
+        public TermsOfParticipation Update(TermsOfParticipation termsOfParticipation)
         {
-            return Storages.InformationCandidate.Update(informationCandidate);
+            return Storages.TermsOfParticipationStorage.Update(termsOfParticipation);
         }
 
         [HttpDelete("Delete")]
         public bool Delete(int Id)
         {
-            return Storages.InformationCandidateStorage.Delete(Id);
+            return Storages.TermsOfParticipationStorage.Delete(Id);
         }
 
         [HttpPost("SaveToFile")]
         public void SaveToFile()
         {
-            Storages.InformationCandidateStorage.SaveToXmlFile();
+            Storages.TermsOfParticipationStorage.SaveToXmlFile();
         }
 
         [HttpGet("ReadFromFile")]
         public void ReadFromFile()
         {
-            Storages.InformationCandidateStorage.ReadFromXmlFile();
+            Storages.TermsOfParticipationStorage.ReadFromXmlFile();
         }
     }
 }

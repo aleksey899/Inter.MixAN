@@ -2,11 +2,11 @@
 using Inter.MixAN.Domain;
 using Inter.MixAN.Repository;
 
-namespace Inter.MixAN.Controllers
+namespace Employment.Controllers
 {
     [ApiController]
-    [Route("/Voter")]
-    public class Voter : ControllerBase
+    [Route("/InformationCandidate")]
+    public class InformationCandidateController : ControllerBase
 
     {
         [HttpPut]
@@ -33,42 +33,40 @@ namespace Inter.MixAN.Controllers
             return str;
         }
 
-
         [HttpPost("Create")]
-        public bool Create(Voter voter)
+        public bool Create(InformationCandidate informationCandidate)
         {
-            return Storages.VoterStorage.Create(voter);
+            return Storages.InformationCandidateStorage.Create(informationCandidate);
         }
 
         [HttpGet("Read")]
-        public Voter Read(int Id)
+        public InformationCandidate Read(int Id)
         {
-            return Storages.VoterStorage.Read(Id);
+            return Storages.InformationCandidateStorage.Read(Id);
         }
 
         [HttpPut("Update")]
-        public Voter Update(Voter voter)
+        public InformationCandidate Update(InformationCandidate informationCandidate)
         {
-            return Storages.VoterStorage.Update(voter);
+            return Storages.InformationCandidateStorage.Update(informationCandidate);
         }
 
         [HttpDelete("Delete")]
         public bool Delete(int Id)
         {
-            return Storages.VoterStorage.Delete(Id);
+            return Storages.InformationCandidateStorage.Delete(Id);
         }
 
         [HttpPost("SaveToFile")]
         public void SaveToFile()
         {
-            Storages.VoterStorage.SaveToXmlFile();
+            Storages.InformationCandidateStorage.SaveToXmlFile();
         }
 
         [HttpGet("ReadFromFile")]
         public void ReadFromFile()
         {
-            Storages.VoterStorage.ReadFromXmlFile();
+            Storages.InformationCandidateStorage.ReadFromXmlFile();
         }
-
     }
 }
