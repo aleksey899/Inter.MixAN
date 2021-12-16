@@ -242,8 +242,10 @@ namespace Inter.MixAN.Controllers
  
  ## 4 Проверка и тестирование системы <a name="тестирование"></a>
  ***
- 
- 
+В качестве тестирования информационной системы была выполнена проверка работы контроллеров в Swagger UI (рисунок 6). 
+<p align="center">
+<img src="https://user-images.githubusercontent.com/80284176/146330300-184e40ac-2812-4513-9c41-9c59bc2d4325.PNG"></p>
+<p align="center">
  
  
 
