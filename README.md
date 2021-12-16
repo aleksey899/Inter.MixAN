@@ -199,6 +199,8 @@ namespace Inter.MixAN.Controllers
         }
 
 ```
+<p align="center">Листинг 2 - Класс "Администратор</p>
+
 После реализованы контроллеры для остальных сущностей(рисунок 5)
   <p align="center">
 <img src="https://user-images.githubusercontent.com/80284176/146317108-8ce6b032-d6dc-4b12-a99b-4aa3c53c0deb.PNG"></p>
