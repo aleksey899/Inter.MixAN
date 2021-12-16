@@ -157,7 +157,7 @@ namespace Inter.MixAN.Domain
 Далее были созданы классы для других сущностей (рисунок 4)
 <p align="center">
 <img src="https://user-images.githubusercontent.com/80284176/146316787-722e0f26-e69c-4e46-8ec7-c4d0e350e4ef.PNG"></p>
-<p align="center">Рисунок 4 - классы других сущностей </p>
+<p align="center">Рисунок 4 - Классы других сущностей </p>
 
 
 Далее для сущности Админ реализуем контроллер с методами CRUD (create, read, update, delete), листинг 2.
@@ -245,7 +245,7 @@ namespace Inter.MixAN.Controllers
 В качестве тестирования информационной системы была выполнена проверка работы контроллеров в Swagger UI (рисунок 6). 
 <p align="center">
 <img src="https://user-images.githubusercontent.com/80284176/146330300-184e40ac-2812-4513-9c41-9c59bc2d4325.PNG"></p>
-<p align="center">
+<p align="center">Рисунок 6 - Проверка контроллеров в Swagger UI </p>
  
  
 
