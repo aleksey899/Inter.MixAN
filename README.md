@@ -149,6 +149,57 @@
 <img src="https://user-images.githubusercontent.com/80284176/146316787-722e0f26-e69c-4e46-8ec7-c4d0e350e4ef.PNG"></p>
 <p align="center">Рисунок 4 - классы других сущностей </p>
 
+
+Далее для сущности Car реализуем контроллер с методами CRUD (create, read, update, delete).
+
+```csharp 
+using Microsoft.AspNetCore.Mvc;
+using Inter.MixAN.Domain;
+using Inter.MixAN.Repository;
+namespace Inter.MixAN.Controllers
+{
+    [ApiController]
+    [Route("/Admin")]
+    public class AdministratorEntityController : ControllerBase
+    {
+[HttpPost("Create")]
+        public bool Create(Admin admin)
+        {
+            return Storages.AdminStorage.Create(admin);
+        }
+
+        [HttpGet("Read")]
+        public Admin Read(int Id)
+        {
+            return Storages.AdminStorage.Read(Id);
+        }
+
+        [HttpPut("Update")]
+        public Admin Update(Admin admin)
+        {
+            return Storages.AdminStorage.Update(admin);
+        }
+
+        [HttpDelete("Delete")]
+        public bool Delete(int Id)
+        {
+            return Storages.AdminStorage.Delete(Id);
+        }
+
+        [HttpPost("SaveToFile")]
+        public void SaveToFile()
+        {
+            Storages.AdminStorage.SaveToXmlFile();
+        }
+
+        [HttpGet("ReadFromFile")]
+        public void ReadFromFile()
+        {
+            Storages.AdminStorage.ReadFromXmlFile();
+        }
+
+```
+
 - Создав репозитории, опредилим где будет хранится.
 
 ```csharp 
