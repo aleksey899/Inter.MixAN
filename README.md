@@ -105,8 +105,6 @@
  ### 3.2 Реализация ИС <a name="реализация"></a>
  ***
 
-
-public class Admin: IIdentifier
     
 - Реализация системы  начинается с ER-диаграммы создаются классы.
 
@@ -147,8 +145,22 @@ public class Admin: IIdentifier
 <p align="center">Листинг 1 - Класс "Администратор</p>
 
 
+- Создав репозитории, опредилим где будет хранится.
 
+```csharp 
+ public class Storages
+    {
+        public static Storage<Admin> AdminStorage { get; } = new();
+        public static Storage<Application> ApplicationStorage { get; } = new();
+        public static Storage<Candidate> CandidateStorage { get; } = new();
+        public static Storage<InformationCandidate> InformationCandidateStorage { get; } = new();
+        public static Storage<InformationVoter> InformationVoterStorage { get; } = new();
+        public static Storage<MaterialsForAgitation> MaterialsForAgitationStorage { get; } = new();
+        public static Storage<TermsOfParticipation> TermsOfParticipationStorage { get; } = new();
+        public static Storage<Voter> VoterStorage { get; } = new();
+    }
 
+```
  
  ***
  
