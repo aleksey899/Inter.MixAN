@@ -98,7 +98,7 @@
 На основе DFD диаграммы создается сущность ER-диаграммы, которая показывает связи в системе.
 <p align="center">
 <img src="https://user-images.githubusercontent.com/80284176/146240013-a19229b9-e8aa-4983-a2c9-0042e61ce6d0.PNG"></p>
-<p align="center">Рисунок 2 - ER-диаграмма</p>
+<p align="center">Рисунок 3 - ER-диаграмма</p>
  
  ***
  
