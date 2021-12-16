@@ -85,7 +85,7 @@
  ***
 Проектирование состоит из трех этапов. В этом процессе используются основные идеи системного подхода и в полной мере проявляются его преимущества.
  
-Разработка начианется с проектрирования USE CASE диаграммы, отображающей основыне лица данной системы: Администратор, Избиратель и Кандидат.
+Разработка начианется с проектрирования USE CASE диаграммы, отображающей основные лица данной системы: Администратор, Избиратель и Кандидат.
  <p align="center">
 <img src="https://user-images.githubusercontent.com/80284176/146237452-3c7c90e6-69b6-4171-a55c-ab95959f6573.PNG"></p>
 <p align="center"> Рисунок 1 - USE CASE диаграмма</p>
@@ -98,14 +98,136 @@
 На основе DFD диаграммы создается сущность ER-диаграммы, которая показывает связи в системе.
 <p align="center">
 <img src="https://user-images.githubusercontent.com/80284176/146240013-a19229b9-e8aa-4983-a2c9-0042e61ce6d0.PNG"></p>
-<p align="center">Рисунок 2 - ER-диаграмма</p>
+<p align="center">Рисунок 3 - ER-диаграмма</p>
  
  ***
  
  ### 3.2 Реализация ИС <a name="реализация"></a>
  ***
 
- 
+    
+- Реализация системы  начинается с ER-диаграммы создаются классы.
+
+```csharp 
+    {
+        public int Id { get; set; }
+        public string Name { get; set; }
+
+        public string Email { get; set; }
+
+        public int PhoneNumber { get; set; }
+
+        public string ListOfCandidates { get; set; }
+
+        public int CandidateInformationID { get; set; }
+
+        public int ElectionsInformationID { get; set; }
+
+        public int TermsParticipationID { get; set; }
+
+        public int UserInformationID { get; set; }
+
+        Admin(int id, string name, string email, int phoneNumber, string listOfCandidates, int candidateInformationID, int electionsInformationID, int termsParticipationID, int userInformationID)
+        {
+            Id = id;
+            Name = name;
+            Email = email;
+            PhoneNumber = phoneNumber;
+            ListOfCandidates = listOfCandidates;
+            CandidateInformationID = candidateInformationID;
+            ElectionsInformationID = electionsInformationID;
+            TermsParticipationID = termsParticipationID;
+            UserInformationID = userInformationID;
+        }
+    }
+
+```
+<p align="center">Листинг 1 - Класс "Администратор</p>
+
+-Далее были созданы классы для других сущностей (рисунок 4)
+<p align="center">
+<img src="https://user-images.githubusercontent.com/80284176/146316787-722e0f26-e69c-4e46-8ec7-c4d0e350e4ef.PNG"></p>
+<p align="center">Рисунок 4 - классы других сущностей </p>
+
+
+-Далее для сущности Админ реализуем контроллер с методами CRUD (create, read, update, delete).
+
+```csharp 
+using Microsoft.AspNetCore.Mvc;
+using Inter.MixAN.Domain;
+using Inter.MixAN.Repository;
+namespace Inter.MixAN.Controllers
+{
+    [ApiController]
+    [Route("/Admin")]
+    public class AdministratorEntityController : ControllerBase
+    {
+[HttpPost("Create")]
+        public bool Create(Admin admin)
+        {
+            return Storages.AdminStorage.Create(admin);
+        }
+
+        [HttpGet("Read")]
+        public Admin Read(int Id)
+        {
+            return Storages.AdminStorage.Read(Id);
+        }
+
+        [HttpPut("Update")]
+        public Admin Update(Admin admin)
+        {
+            return Storages.AdminStorage.Update(admin);
+        }
+
+        [HttpDelete("Delete")]
+        public bool Delete(int Id)
+        {
+            return Storages.AdminStorage.Delete(Id);
+        }
+
+        [HttpPost("SaveToFile")]
+        public void SaveToFile()
+        {
+            Storages.AdminStorage.SaveToXmlFile();
+        }
+
+        [HttpGet("ReadFromFile")]
+        public void ReadFromFile()
+        {
+            Storages.AdminStorage.ReadFromXmlFile();
+        }
+
+```
+<p align="center">Листинг 2 - Класс "Администратор</p>
+
+После реализованы контроллеры для остальных сущностей(рисунок 5)
+  <p align="center">
+<img src="https://user-images.githubusercontent.com/80284176/146317108-8ce6b032-d6dc-4b12-a99b-4aa3c53c0deb.PNG"></p>
+<p align="center"> Рисунок 5 - Контроллеры других сущностей
+  
+
+- Создав репозитории, опредилим где будет хранится.
+
+```csharp 
+  
+ public class Storages
+    {
+        public static Storage<Admin> AdminStorage { get; } = new();
+        public static Storage<Application> ApplicationStorage { get; } = new();
+        public static Storage<Candidate> CandidateStorage { get; } = new();
+        public static Storage<InformationCandidate> InformationCandidateStorage { get; } = new();
+        public static Storage<InformationVoter> InformationVoterStorage { get; } = new();
+        public static Storage<MaterialsForAgitation> MaterialsForAgitationStorage { get; } = new();
+        public static Storage<TermsOfParticipation> TermsOfParticipationStorage { get; } = new();
+        public static Storage<Voter> VoterStorage { get; } = new();
+    }
+
+```
+ <p align="center">Листинг 3 - Общее хранилище
+  
+
+  
  ***
  
  ## 4 Проверка и тестирование системы <a name="тестирование"></a>
