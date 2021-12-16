@@ -109,9 +109,15 @@
  ***
 
     
--Реализация системы  начинается с ER-диаграммы, создаются классы листинг 1.
+Реализация системы  начинается с ER-диаграммы, создаются классы листинг 1.
 
 ```csharp 
+    using Inter.MixAN.Repository;
+
+
+namespace Inter.MixAN.Domain
+{
+    public class Admin: IIdentifier
     {
         public int Id { get; set; }
         public string Name { get; set; }
@@ -143,17 +149,18 @@
             UserInformationID = userInformationID;
         }
     }
+}
 
 ```
 <p align="center">Листинг 1 - Класс "Администратор"</p>
 
--Далее были созданы классы для других сущностей (рисунок 4)
+Далее были созданы классы для других сущностей (рисунок 4)
 <p align="center">
 <img src="https://user-images.githubusercontent.com/80284176/146316787-722e0f26-e69c-4e46-8ec7-c4d0e350e4ef.PNG"></p>
 <p align="center">Рисунок 4 - классы других сущностей </p>
 
 
--Далее для сущности Админ реализуем контроллер с методами CRUD (create, read, update, delete), листинг 2.
+Далее для сущности Админ реализуем контроллер с методами CRUD (create, read, update, delete), листинг 2.
 
 ```csharp 
 using Microsoft.AspNetCore.Mvc;
@@ -165,7 +172,7 @@ namespace Inter.MixAN.Controllers
     [Route("/Admin")]
     public class AdministratorEntityController : ControllerBase
     {
-[HttpPost("Create")]
+        [HttpPost("Create")]
         public bool Create(Admin admin)
         {
             return Storages.AdminStorage.Create(admin);
