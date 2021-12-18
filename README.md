@@ -312,7 +312,7 @@ namespace Inter.MixAN.Controllers
   
  <a name="sourse_1"> 
    
-[1] Независимый общественный мониторинг [Электронный ресурс]. - https://nom24.ru/info/events/pochemu-vazhno-i-nuzhno-khodit-na-vybory/ (дата доступа: 07.11.2021)
+[1] Независимый общественный мониторинг [Электронный ресурс]. - https://nom24.ru/info/events/pochemu-vazhno-i-nuzhno-khodit-na-vybory/ (дата доступа: 18.10.2021)
    
    
  <a name="sourse_2"> 
