@@ -269,11 +269,15 @@ namespace Inter.MixAN.Controllers
 <img src="https://user-images.githubusercontent.com/80284176/146641866-971e137b-79ed-4395-bda4-f046f2caa6ca.PNG"></p>
 <p align="center">Рисунок 10 - Реализация операции Read </p>
   
-  Реализация чтения информации об Администраторе с ID=14890 представлена на рисунке 12.
+  Реализация чтения информации об Администраторе с ID=14890 (рисунок 11).
+   <p align="center">
+<img src="https://user-images.githubusercontent.com/80284176/146642910-c4a160a1-5b08-47c8-bdf8-121dec95cb31.PNG"></p>
+<p align="center">Рисунок 11 - Чтение записи и результат </p>
+   
+ 3) Операция Update позволяет изменить запись.
   
   
- 
-
+  
 ***
  ## Заключение <a name="заключение"></a>
 ***
