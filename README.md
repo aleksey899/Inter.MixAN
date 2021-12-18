@@ -265,6 +265,11 @@ namespace Inter.MixAN.Controllers
 <p align="center">Рисунок 9 - Результат операции Create </p>
   
   2) Метод Read позволяет считать значение записи, выбранной по определенному критерию (рисунок 10).
+  <p align="center">
+<img src="https://user-images.githubusercontent.com/80284176/146641866-971e137b-79ed-4395-bda4-f046f2caa6ca.PNG"></p>
+<p align="center">Рисунок 10 - Реализация операции Read </p>
+  
+  Реализация чтения информации об Администраторе с ID=14890 представлена на рисунке 12.
   
   
  
