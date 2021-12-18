@@ -256,12 +256,12 @@ namespace Inter.MixAN.Controllers
   
   Создание записи о Администраторе (рисунок 8).
   <p align="center">
-<img src="https://user-images.githubusercontent.com/80284176/146640574-4205a793-6ef2-4bc6-a50c-77b4633fb6e6.PNG"></p>
+<img src="https://user-images.githubusercontent.com/80284176/146640845-7feab474-815a-4fa2-a50c-b8ba44876b19.PNG"></p>
 <p align="center">Рисунок 8 - Создание новой записи </p>
   
   В ходе выполнения операции получаем результат (рисунок 9).
   <p align="center">
-<img src="https://user-images.githubusercontent.com/80284176/146640644-6da4da6e-81d6-49e9-903c-ba27f80d8ac2.PNG"></p>
+<img src="https://user-images.githubusercontent.com/80284176/146640862-34b44777-de01-4648-95ba-90b8b93d7b24.PNG"></p>
 <p align="center">Рисунок 9 - Результат операции Create </p>
   
   2) Метод Read позволяет считать значение записи, выбранной по определенному критерию (рисунок 10).
