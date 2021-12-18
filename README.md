@@ -247,6 +247,26 @@ namespace Inter.MixAN.Controllers
 <img src="https://user-images.githubusercontent.com/80284176/146330300-184e40ac-2812-4513-9c41-9c59bc2d4325.PNG"></p>
 <p align="center">Рисунок 6 - Проверка контроллеров в Swagger UI </p>
  
+Работа основных методов CRUD на примере сущности Administrator.
+  
+  1) С помощью операции Create можно создавать новые записи в таблице (рисунок 7).
+  <p align="center">
+<img src="https://user-images.githubusercontent.com/80284176/146640305-17f8c47a-ba22-434f-9172-312cc0414a79.PNG"></p>
+<p align="center">Рисунок 7 - Реализация операции Create </p>
+  
+  Создание записи о Администраторе (рисунок 8).
+  <p align="center">
+<img src="https://user-images.githubusercontent.com/80284176/146640574-4205a793-6ef2-4bc6-a50c-77b4633fb6e6.PNG"></p>
+<p align="center">Рисунок 8 - Создание новой записи </p>
+  
+  В ходе выполнения операции получаем результат (рисунок 9).
+  <p align="center">
+<img src="https://user-images.githubusercontent.com/80284176/146640644-6da4da6e-81d6-49e9-903c-ba27f80d8ac2.PNG"></p>
+<p align="center">Рисунок 9 - Результат операции Create </p>
+  
+  2) Метод Read позволяет считать значение записи, выбранной по определенному критерию (рисунок 10).
+  
+  
  
 
 ***
