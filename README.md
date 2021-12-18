@@ -313,7 +313,10 @@ namespace Inter.MixAN.Controllers
   <a name="sourse_1">  
    1. Независимый общественный мониторинг [Электронный ресурс]. - Режим доступа: https://nom24.ru/info/events/pochemu-vazhno-i-nuzhno-khodit-na-vybory/ (дата доступа: 18.10.2021).
    
- <a name="sourse_2">   
+    
+    
+    
+<a name="sourse_2">   
    2. Информационный портал о выборах "Выбор народа" [Электронный ресурс]. – Режим доступа: http://vybor-naroda.org/lentanovostey/193789-na-puti-k-cifrovizacii-pljusy-i-minusy-djeg.html (дата доступа: 07.11.2021).
 
    
