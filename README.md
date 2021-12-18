@@ -274,7 +274,31 @@ namespace Inter.MixAN.Controllers
 <img src="https://user-images.githubusercontent.com/80284176/146642910-c4a160a1-5b08-47c8-bdf8-121dec95cb31.PNG"></p>
 <p align="center">Рисунок 11 - Чтение записи и результат </p>
    
- 3) Операция Update позволяет изменить запись.
+ 3) Операция Update позволяет изменить запись (рисунок 12).
+<p align="center">
+<img src="https://user-images.githubusercontent.com/80284176/146643329-bd4e8c7e-ab1a-45c0-9de6-9e144b298fce.PNG"></p>
+<p align="center">Рисунок 12 - Реализация операции Update </p>  
+  
+  Изменение почты администратора и результат операции (рисунок 13).
+<p align="center">
+<img src="https://user-images.githubusercontent.com/80284176/146643411-c980301a-b034-438e-950c-784d291c03d6.PNG"></p>
+<p align="center">Рисунок 13 - Редактирование записи и результат операции Update </p> 
+  
+  4) Метод Delete удаляет записи. В случае успешного удаления выводится true, иначе - false (рисунок 14). 
+<p align="center">
+<img src="https://user-images.githubusercontent.com/80284176/146643527-d2a37a1b-e8cd-4a14-b8c5-0b6d48682d89.PNG"></p>
+<p align="center">Рисунок 14 - Реализация метода Delete</p>
+  
+  Удаление записи об администраторе (рисунок 15).
+  <p align="center">
+<img src="https://user-images.githubusercontent.com/80284176/146643626-f785097e-91d9-4631-b17d-4c4644b8d431.PNG"></p>
+<p align="center">Рисунок 15 - Удаление записи</p>
+  
+  Результат операции Delete (рисунок 16)
+   <p align="center">
+<img src="https://user-images.githubusercontent.com/80284176/146643729-fdc2feb2-311a-4178-b207-e62491adb4b8.PNG"></p>
+<p align="center">Рисунок 16 - Результат операции</p>
+
   
   
   
