@@ -319,11 +319,6 @@ namespace Inter.MixAN.Controllers
  <a name="sourse_2">   
 2. Информационный портал о выборах "Выбор народа" [Электронный ресурс]. – Режим доступа: http://vybor-naroda.org/lentanovostey/193789-na-puti-k-cifrovizacii-pljusy-i-minusy-djeg.html (дата доступа: 07.11.2021).
    
-
-   
-   
- <a name="sourse_3"> 
-3. Draw.io [Электронный ресурс]. – Режим доступа: https://app.diagrams.net/ (дата доступа: 07.09.2021)
    
    
 4. Что такое диаграмма DFD и как ее создать? Lucidchart [Электронный ресурс]. – Режим доступа: https://www.lucidchart.com/pages/ru/%D0%B4%D0%B8%D0%B0%D0%B3%D1%80%D0%B0%D0%BC%D0%BC%D0%B0-dfd, свободный (дата обращения: 20.10.2021).
