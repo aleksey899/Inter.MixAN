@@ -310,12 +310,14 @@ namespace Inter.MixAN.Controllers
  
  ## Список использованных источников <a name="список_использованных_источников"></a>
   
+  <a name="sourse_1.1"> 
+[1] Информационный портал о выборах "Выбор народа" [Электронный ресурс]. – http://vybor-naroda.org/lentanovostey/193789-na-puti-k-cifrovizacii-pljusy-i-minusy-djeg.html (дата доступа: 07.11.2021)
+  
+  
+[2] Draw.io [Электронный ресурс]. – https://app.diagrams.net/
+  
+  
  
-1. Draw.io [Электронный ресурс]. – https://app.diagrams.net/
-  
-  
- <a name="sourse_1.1"> 
-[2] Информационный портал о выборах "Выбор народа" [Электронный ресурс]. – http://vybor-naroda.org/lentanovostey/193789-na-puti-k-cifrovizacii-pljusy-i-minusy-djeg.html
   
   
   
