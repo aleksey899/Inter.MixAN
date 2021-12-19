@@ -219,6 +219,7 @@ namespace Inter.MixAN.Controllers
 Создав репозитории, опредилим где будет хранится, листинг 3.
   
 <p align="left">Листинг 3 - Общее хранилище</p>
+
 ```csharp 
   
  public class Storages
