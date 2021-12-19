@@ -289,15 +289,11 @@ namespace Inter.MixAN.Controllers
 <img src="https://user-images.githubusercontent.com/80284176/146643527-d2a37a1b-e8cd-4a14-b8c5-0b6d48682d89.PNG"></p>
 <p align="center">Рисунок 14 - Реализация метода Delete</p>
   
-  Удаление записи об администраторе (рисунок 15).
-  <p align="center">
-<img src="https://user-images.githubusercontent.com/80284176/146643626-f785097e-91d9-4631-b17d-4c4644b8d431.PNG"></p>
-<p align="center">Рисунок 15 - Удаление записи</p>
   
-  Результат операции Delete (рисунок 16)
+  Результат операции Delete (рисунок 15)
    <p align="center">
 <img src="https://user-images.githubusercontent.com/80284176/146672162-4efb0b90-560a-413e-9c11-05632121aa9e.png"></p>
-<p align="center">Рисунок 16 - Результат операции</p>
+<p align="center">Рисунок 15 - Результат операции</p>
 
   
   
