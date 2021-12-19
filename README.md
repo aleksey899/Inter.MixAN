@@ -296,7 +296,7 @@ namespace Inter.MixAN.Controllers
   
   Результат операции Delete (рисунок 16)
    <p align="center">
-<img src="https://user-images.githubusercontent.com/80284176/146643729-fdc2feb2-311a-4178-b207-e62491adb4b8.PNG"></p>
+<img src="https://user-images.githubusercontent.com/80284176/146672162-4efb0b90-560a-413e-9c11-05632121aa9e.png"></p>
 <p align="center">Рисунок 16 - Результат операции</p>
 
   
