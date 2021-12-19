@@ -160,6 +160,8 @@ namespace Inter.MixAN.Domain
 
 Далее для сущности Админ реализуем контроллер с методами CRUD (create, read, update, delete), листинг 2.
 
+<p align="left">Листинг 2 - Класс "Администратор</p>
+
 ```csharp 
 using Microsoft.AspNetCore.Mvc;
 using Inter.MixAN.Domain;
@@ -207,16 +209,16 @@ namespace Inter.MixAN.Controllers
         }
 
 ```
-<p align="center">Листинг 2 - Класс "Администратор</p>
+
 
 После реализованы контроллеры для остальных сущностей (рисунок 5)
   <p align="center">
 <img src="https://user-images.githubusercontent.com/80284176/146317108-8ce6b032-d6dc-4b12-a99b-4aa3c53c0deb.PNG"></p>
 <p align="center"> Рисунок 5 - Контроллеры других сущностей
   
-
-- Создав репозитории, опредилим где будет хранится, листинг 3.
-
+Создав репозитории, опредилим где будет хранится, листинг 3.
+  
+<p align="left">Листинг 3 - Общее хранилище</p>
 ```csharp 
   
  public class Storages
