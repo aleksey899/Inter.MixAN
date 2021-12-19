@@ -135,9 +135,7 @@ namespace Inter.MixAN.Domain
         public int TermsParticipationID { get; set; }
 
         public int UserInformationID { get; set; }
-        
-        public Admin() { }
-
+               
         public Admin(int id, string name, string email, int phoneNumber, string listOfCandidates, int candidateInformationID, int electionsInformationID, int termsParticipationID, int userInformationID)
         {
             Id = id;
@@ -276,12 +274,12 @@ namespace Inter.MixAN.Controllers
    
  3) Операция Update позволяет изменить запись (рисунок 12).
 <p align="center">
-<img src="https://user-images.githubusercontent.com/80284176/146643329-bd4e8c7e-ab1a-45c0-9de6-9e144b298fce.PNG"></p>
+<img src="https://user-images.githubusercontent.com/80284176/146672724-83072e9d-60ae-470c-b612-d18a846c4b6d.PNG"></p>
 <p align="center">Рисунок 12 - Реализация операции Update </p>  
   
   Изменение почты администратора и результат операции (рисунок 13).
 <p align="center">
-<img src="https://user-images.githubusercontent.com/80284176/146643411-c980301a-b034-438e-950c-784d291c03d6.PNG"></p>
+<img src="https://user-images.githubusercontent.com/80284176/146672739-45b91bcc-00b1-4b98-81b3-390c49ac311d.PNG"></p>
 <p align="center">Рисунок 13 - Редактирование записи и результат операции Update </p> 
   
   4) Метод Delete удаляет записи. В случае успешного удаления выводится true, иначе - false (рисунок 14). 
