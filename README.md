@@ -256,12 +256,12 @@ namespace Inter.MixAN.Controllers
   
   Создание записи о Администраторе (рисунок 8).
   <p align="center">
-<img src="https://user-images.githubusercontent.com/80284176/146671788-7f9c27c9-03f8-4926-89c5-369fd1fd012f.PNG"></p>
+<img src="https://user-images.githubusercontent.com/80284176/146672547-a76ee022-ea54-45ea-9ac2-b96d251c4803.PNG"></p>
 <p align="center">Рисунок 8 - Создание новой записи </p>
   
   В ходе выполнения операции получаем результат (рисунок 9).
   <p align="center">
-<img src="https://user-images.githubusercontent.com/80284176/146671799-fc49ef49-6a60-4181-94c5-1f1a837d529d.PNG"></p>
+<img src="https://user-images.githubusercontent.com/80284176/146672561-3a5a4fd8-6fa3-48db-86c1-2bc5bbc478c6.PNG"></p>
 <p align="center">Рисунок 9 - Результат операции Create </p>
   
   2) Метод Read позволяет считать значение записи, выбранной по определенному критерию (рисунок 10).
@@ -271,7 +271,7 @@ namespace Inter.MixAN.Controllers
   
   Реализация чтения информации об Администраторе с ID=123 (рисунок 11).
    <p align="center">
-<img src="https://user-images.githubusercontent.com/80284176/146671861-2751d9d6-9eaf-4694-a309-88d7ad2f09f0.PNG"></p>
+<img src="https://user-images.githubusercontent.com/80284176/146672592-5da02a7d-8337-4072-8d90-ccd81fef2612.PNG"></p>
 <p align="center">Рисунок 11 - Чтение записи и результат </p>
    
  3) Операция Update позволяет изменить запись (рисунок 12).
