@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2022-04-03T16:43:00.371Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.74 Safari/537.36 Edg/99.0.1150.55" etag="TYM-Doccy1qWzFYCPjju" version="17.4.0" type="github">
+<mxfile host="app.diagrams.net" modified="2022-04-04T13:38:04.041Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.74 Safari/537.36 Edg/99.0.1150.55" etag="0tEH5AEIIw6M8igkXCg2" version="17.4.0" type="github">
   <diagram id="GAjldu8CvQfdoY2lyqWb" name="Page-1">
-    <mxGraphModel dx="1597" dy="949" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1384" dy="823" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -169,10 +169,10 @@
         <mxCell id="S6nhPxF0T-wev8pzvQjq-54" value="Внос  агитационного&#xa;материала " style="text;align=center;fontStyle=1;verticalAlign=middle;spacingLeft=3;spacingRight=3;strokeColor=none;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="1" vertex="1">
           <mxGeometry x="220" y="232" width="80" height="26" as="geometry" />
         </mxCell>
-        <mxCell id="S6nhPxF0T-wev8pzvQjq-55" value="Access control" style="text;align=center;fontStyle=1;verticalAlign=middle;spacingLeft=3;spacingRight=3;strokeColor=none;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="1" vertex="1">
+        <mxCell id="S6nhPxF0T-wev8pzvQjq-55" value="Контроль доступа" style="text;align=center;fontStyle=1;verticalAlign=middle;spacingLeft=3;spacingRight=3;strokeColor=none;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="1" vertex="1">
           <mxGeometry x="620" y="462" width="80" height="26" as="geometry" />
         </mxCell>
-        <mxCell id="S6nhPxF0T-wev8pzvQjq-56" value="Access control" style="text;align=center;fontStyle=1;verticalAlign=middle;spacingLeft=3;spacingRight=3;strokeColor=none;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="1" vertex="1">
+        <mxCell id="S6nhPxF0T-wev8pzvQjq-56" value="Контроль доступа" style="text;align=center;fontStyle=1;verticalAlign=middle;spacingLeft=3;spacingRight=3;strokeColor=none;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="1" vertex="1">
           <mxGeometry x="334" y="680" width="80" height="26" as="geometry" />
         </mxCell>
         <mxCell id="S6nhPxF0T-wev8pzvQjq-57" value="" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;endFill=0;sketch=0;sourcePerimeterSpacing=0;targetPerimeterSpacing=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;startArrow=none;startFill=0;" parent="1" source="S6nhPxF0T-wev8pzvQjq-3" target="S6nhPxF0T-wev8pzvQjq-59" edge="1">
@@ -194,13 +194,13 @@
         <mxCell id="S6nhPxF0T-wev8pzvQjq-61" value="&lt;b&gt;Информация о избирателе&lt;/b&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="100" y="774" width="60" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="S6nhPxF0T-wev8pzvQjq-66" value="Data access" style="text;align=center;fontStyle=1;verticalAlign=middle;spacingLeft=3;spacingRight=3;strokeColor=none;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="1" vertex="1">
-          <mxGeometry x="760" y="602" width="80" height="26" as="geometry" />
+        <mxCell id="S6nhPxF0T-wev8pzvQjq-66" value="Доступ к данным" style="text;align=center;fontStyle=1;verticalAlign=middle;spacingLeft=3;spacingRight=3;strokeColor=none;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="1" vertex="1">
+          <mxGeometry x="770" y="602" width="80" height="26" as="geometry" />
         </mxCell>
         <mxCell id="j8nSpefnqz9G-VTvlD4A-1" value="Голосование" style="text;align=center;fontStyle=1;verticalAlign=middle;spacingLeft=3;spacingRight=3;strokeColor=none;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="1">
           <mxGeometry x="80" y="577" width="80" height="26" as="geometry" />
         </mxCell>
-        <mxCell id="S6nhPxF0T-wev8pzvQjq-67" value="Data access" style="text;align=center;fontStyle=1;verticalAlign=middle;spacingLeft=3;spacingRight=3;strokeColor=none;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="1" vertex="1">
+        <mxCell id="S6nhPxF0T-wev8pzvQjq-67" value="Доступ к данным" style="text;align=center;fontStyle=1;verticalAlign=middle;spacingLeft=3;spacingRight=3;strokeColor=none;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="1" vertex="1">
           <mxGeometry x="344" y="780" width="80" height="26" as="geometry" />
         </mxCell>
         <mxCell id="j8nSpefnqz9G-VTvlD4A-3" value="" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;endFill=0;sketch=0;sourcePerimeterSpacing=0;targetPerimeterSpacing=0;exitX=0.75;exitY=0;exitDx=0;exitDy=0;edgeStyle=orthogonalEdgeStyle;" edge="1" target="j8nSpefnqz9G-VTvlD4A-5" parent="1" source="S6nhPxF0T-wev8pzvQjq-5">
