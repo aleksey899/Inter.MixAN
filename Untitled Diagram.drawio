@@ -1,10 +1,10 @@
-<mxfile host="app.diagrams.net" modified="2022-04-28T21:14:45.498Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.127 Safari/537.36 Edg/100.0.1185.50" etag="c-2qeAtJSPt3jgwD00fi" version="17.4.6" type="github">
+<mxfile host="app.diagrams.net" modified="2022-04-29T07:52:22.181Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.127 Safari/537.36 Edg/100.0.1185.50" etag="1GPt0B-gRu-XjmOES_OA" version="17.4.6" type="github">
   <diagram id="GAjldu8CvQfdoY2lyqWb" name="Page-1">
-    <mxGraphModel dx="1221" dy="726" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1153" dy="686" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="S6nhPxF0T-wev8pzvQjq-3" value="&lt;b&gt;&amp;lt;&amp;lt;Component&amp;gt;&amp;gt;&lt;/b&gt;&lt;br&gt;«Term participation»" style="html=1;dropTarget=0;" parent="1" vertex="1">
+        <mxCell id="S6nhPxF0T-wev8pzvQjq-3" value="&lt;b&gt;&amp;lt;&amp;lt;Component&amp;gt;&amp;gt;&lt;/b&gt;&lt;br&gt;«Terms participation»" style="html=1;dropTarget=0;" parent="1" vertex="1">
           <mxGeometry x="440" y="630" width="180" height="90" as="geometry" />
         </mxCell>
         <mxCell id="S6nhPxF0T-wev8pzvQjq-4" value="" style="shape=module;jettyWidth=8;jettyHeight=4;" parent="S6nhPxF0T-wev8pzvQjq-3" vertex="1">
@@ -73,10 +73,10 @@
         <mxCell id="S6nhPxF0T-wev8pzvQjq-47" value="" style="ellipse;whiteSpace=wrap;html=1;align=center;aspect=fixed;resizable=0;points=[];outlineConnect=0;sketch=0;" parent="1" vertex="1">
           <mxGeometry x="480" y="500" width="10" height="10" as="geometry" />
         </mxCell>
-        <mxCell id="S6nhPxF0T-wev8pzvQjq-55" value="Контроль доступа" style="text;align=center;fontStyle=1;verticalAlign=middle;spacingLeft=3;spacingRight=3;strokeColor=none;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="1" vertex="1">
-          <mxGeometry x="560" y="472" width="80" height="26" as="geometry" />
+        <mxCell id="S6nhPxF0T-wev8pzvQjq-55" value="Compliance  conditions" style="text;align=center;fontStyle=1;verticalAlign=middle;spacingLeft=3;spacingRight=3;strokeColor=none;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="1" vertex="1">
+          <mxGeometry x="570" y="466" width="80" height="26" as="geometry" />
         </mxCell>
-        <mxCell id="S6nhPxF0T-wev8pzvQjq-56" value="Контроль доступа" style="text;align=center;fontStyle=1;verticalAlign=middle;spacingLeft=3;spacingRight=3;strokeColor=none;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="1" vertex="1">
+        <mxCell id="S6nhPxF0T-wev8pzvQjq-56" value="Access control" style="text;align=center;fontStyle=1;verticalAlign=middle;spacingLeft=3;spacingRight=3;strokeColor=none;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="1" vertex="1">
           <mxGeometry x="274" y="690" width="80" height="26" as="geometry" />
         </mxCell>
         <mxCell id="S6nhPxF0T-wev8pzvQjq-57" value="" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;endFill=0;sketch=0;sourcePerimeterSpacing=0;targetPerimeterSpacing=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;startArrow=none;startFill=0;" parent="1" source="S6nhPxF0T-wev8pzvQjq-3" target="S6nhPxF0T-wev8pzvQjq-59" edge="1">
@@ -92,16 +92,16 @@
         <mxCell id="S6nhPxF0T-wev8pzvQjq-59" value="" style="ellipse;whiteSpace=wrap;html=1;align=center;aspect=fixed;resizable=0;points=[];outlineConnect=0;sketch=0;" parent="1" vertex="1">
           <mxGeometry x="309" y="670" width="10" height="10" as="geometry" />
         </mxCell>
-        <mxCell id="S6nhPxF0T-wev8pzvQjq-60" value="Условия участия" style="text;align=center;fontStyle=1;verticalAlign=middle;spacingLeft=3;spacingRight=3;strokeColor=none;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="1" vertex="1">
+        <mxCell id="S6nhPxF0T-wev8pzvQjq-60" value="Terms participation" style="text;align=center;fontStyle=1;verticalAlign=middle;spacingLeft=3;spacingRight=3;strokeColor=none;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="1" vertex="1">
           <mxGeometry x="380" y="492" width="80" height="26" as="geometry" />
         </mxCell>
-        <mxCell id="S6nhPxF0T-wev8pzvQjq-66" value="Доступ к данным" style="text;align=center;fontStyle=1;verticalAlign=middle;spacingLeft=3;spacingRight=3;strokeColor=none;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="1" vertex="1">
+        <mxCell id="S6nhPxF0T-wev8pzvQjq-66" value="Registration" style="text;align=center;fontStyle=1;verticalAlign=middle;spacingLeft=3;spacingRight=3;strokeColor=none;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="1" vertex="1">
           <mxGeometry x="710" y="612" width="80" height="26" as="geometry" />
         </mxCell>
         <mxCell id="j8nSpefnqz9G-VTvlD4A-1" value="Голосование" style="text;align=center;fontStyle=1;verticalAlign=middle;spacingLeft=3;spacingRight=3;strokeColor=none;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="1" vertex="1">
-          <mxGeometry x="20" y="587" width="80" height="26" as="geometry" />
+          <mxGeometry x="354" y="70" width="80" height="26" as="geometry" />
         </mxCell>
-        <mxCell id="S6nhPxF0T-wev8pzvQjq-67" value="Доступ к данным" style="text;align=center;fontStyle=1;verticalAlign=middle;spacingLeft=3;spacingRight=3;strokeColor=none;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="1" vertex="1">
+        <mxCell id="S6nhPxF0T-wev8pzvQjq-67" value="Data access" style="text;align=center;fontStyle=1;verticalAlign=middle;spacingLeft=3;spacingRight=3;strokeColor=none;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="1" vertex="1">
           <mxGeometry x="284" y="790" width="80" height="26" as="geometry" />
         </mxCell>
         <mxCell id="j8nSpefnqz9G-VTvlD4A-3" value="" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;endFill=0;sketch=0;sourcePerimeterSpacing=0;targetPerimeterSpacing=0;exitX=0.75;exitY=0;exitDx=0;exitDy=0;edgeStyle=orthogonalEdgeStyle;" parent="1" source="S6nhPxF0T-wev8pzvQjq-5" target="j8nSpefnqz9G-VTvlD4A-5" edge="1">
@@ -136,7 +136,8 @@
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="280" y="730" as="sourcePoint" />
             <Array as="points">
-              <mxPoint x="165" y="825" />
+              <mxPoint x="120" y="720" />
+              <mxPoint x="120" y="825" />
             </Array>
           </mxGeometry>
         </mxCell>
@@ -156,7 +157,7 @@
         <mxCell id="j8nSpefnqz9G-VTvlD4A-26" value="" style="ellipse;whiteSpace=wrap;html=1;align=center;aspect=fixed;resizable=0;points=[];outlineConnect=0;sketch=0;" parent="1" vertex="1">
           <mxGeometry x="525" y="774" width="10" height="10" as="geometry" />
         </mxCell>
-        <mxCell id="j8nSpefnqz9G-VTvlD4A-27" value="Проверка &#xa;условий" style="text;align=center;fontStyle=1;verticalAlign=middle;spacingLeft=3;spacingRight=3;strokeColor=none;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="1" vertex="1">
+        <mxCell id="j8nSpefnqz9G-VTvlD4A-27" value="Checking&#xa;conditions" style="text;align=center;fontStyle=1;verticalAlign=middle;spacingLeft=3;spacingRight=3;strokeColor=none;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="1" vertex="1">
           <mxGeometry x="440" y="766" width="80" height="26" as="geometry" />
         </mxCell>
       </root>
