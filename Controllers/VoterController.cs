@@ -9,6 +9,7 @@ namespace Inter.MixAN.Controllers
     public class VoterController : ControllerBase
 
     {
+       
         [HttpPost("RegistrationOnThePlatform")]
         public string RegistrationOnThePlatform(string str)
         {
@@ -52,4 +53,7 @@ namespace Inter.MixAN.Controllers
             return str;// Оставить голос
         }
     }
+
+    
+
 }

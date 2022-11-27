@@ -27,14 +27,14 @@ namespace Inter.MixAN.Controllers
             return str;// Проверка заявок
 
         }
-        
+
         [HttpPost("TermsOfParticipation")]
         public string TermsOfParticipation(string str)
         {
             return str;// Условия участия
 
         }
-        
+
         [HttpGet("CheckingVotes")]
         public string CheckingVotes(string str)
         {
@@ -44,4 +44,15 @@ namespace Inter.MixAN.Controllers
 
 
     }
+
+    public class AdministratorInfoCandidate_Controller : ControllerBase
+    {        
+            [HttpPost("InformationAboutCandidates")]
+            public string InformationAboutCandidates(string str)
+            {
+                return str;// Внести информация о кандидатах
+
+            }
+        }
+    
 }

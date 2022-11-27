@@ -1,4 +1,3 @@
-using System;
 using Inter.MixAN.Repository;
 
 namespace Inter.MixAN.Domain

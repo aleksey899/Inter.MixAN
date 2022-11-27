@@ -11,7 +11,6 @@ C:\Users\Господiн\Documents\GitHub\Inter.MixAN\bin\Debug\net5.0\Microsoft
 C:\Users\Господiн\Documents\GitHub\Inter.MixAN\bin\Debug\net5.0\Swashbuckle.AspNetCore.Swagger.dll
 C:\Users\Господiн\Documents\GitHub\Inter.MixAN\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerGen.dll
 C:\Users\Господiн\Documents\GitHub\Inter.MixAN\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerUI.dll
-C:\Users\Господiн\Documents\GitHub\Inter.MixAN\obj\Debug\net5.0\Inter.MixAN.csproj.AssemblyReference.cache
 C:\Users\Господiн\Documents\GitHub\Inter.MixAN\obj\Debug\net5.0\Inter.MixAN.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\Господiн\Documents\GitHub\Inter.MixAN\obj\Debug\net5.0\Inter.MixAN.AssemblyInfoInputs.cache
 C:\Users\Господiн\Documents\GitHub\Inter.MixAN\obj\Debug\net5.0\Inter.MixAN.AssemblyInfo.cs
@@ -56,3 +55,4 @@ D:\rsreu\03_practice\035\Aleshin\obj\Debug\net5.0\Inter.MixAN.dll
 D:\rsreu\03_practice\035\Aleshin\obj\Debug\net5.0\ref\Inter.MixAN.dll
 D:\rsreu\03_practice\035\Aleshin\obj\Debug\net5.0\Inter.MixAN.pdb
 D:\rsreu\03_practice\035\Aleshin\obj\Debug\net5.0\Inter.MixAN.genruntimeconfig.cache
+C:\Users\Господiн\Documents\GitHub\Inter.MixAN\obj\Debug\net5.0\Inter.MixAN.csproj.AssemblyReference.cache

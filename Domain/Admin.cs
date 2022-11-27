@@ -1,4 +1,3 @@
-using System;
 using Inter.MixAN.Repository;
 
 
@@ -23,7 +22,7 @@ namespace Inter.MixAN.Domain
 
         public int UserInformationID { get; set; }
 
-        Admin(int id, string name, string email, int phoneNumber, string listOfCandidates, int candidateInformationID, int electionsInformationID, int termsParticipationID, int userInformationID)
+        public Admin(int id, string name, string email, int phoneNumber, string listOfCandidates, int candidateInformationID, int electionsInformationID, int termsParticipationID, int userInformationID)
         {
             Id = id;
             Name = name;

@@ -7,15 +7,15 @@ namespace Inter.MixAN.Repository
 {
     public class Storage<TIdentifier> where TIdentifier : IIdentifier
     {
-        private static string _filepath = nameof(IIdentifier) + ".xml";
+        private static readonly string _filepath = "Storages/" + typeof(TIdentifier).Name + "s.xml";
         private List<TIdentifier> _storage = new();
 
         public void ReadFromXmlFile()
         {
-            if (File.Exists(_filepath)) return;           
+            if (File.Exists(_filepath)) return;
             var xs = new XmlSerializer(typeof(List<IIdentifier>));
             using var fs = new FileStream(_filepath, FileMode.Open);
-            _storage = (List<TIdentifier>)xs.Deserialize(fs);           
+            _storage = (List<TIdentifier>)xs.Deserialize(fs);
         }
 
         public void SaveToXmlFile()
